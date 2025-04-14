@@ -87,7 +87,6 @@ all: $(OUTPUT_FILE)
 clean:
 	rm -f $(OBJ_DIR)/$(EXECUTABLE_NAME).o
 	rm -f $(OUTPUT_FILE)
-	rm -f $(BIN_DIR)/$(SDK_LIB_FILE)
 	rm -f $(BIN_DIR)/*.dylib
 	rmdir $(OBJ_DIR) 2>/dev/null || true
 	rmdir $(BIN_DIR) 2>/dev/null || true
@@ -97,7 +96,6 @@ cleanall:
 	rm -f obj/*/debug/*.o
 	rm -f bin/*/release/$(EXECUTABLE_NAME)
 	rm -f bin/*/debug/$(EXECUTABLE_NAME)
-	rm -f bin/*/release/$(SDK_LIB_FILE)
 	rm -f bin/*/debug/$(SDK_LIB_FILE)
 	rm -f bin/*/release/*.dylib
 	rm -f bin/*/debug/*.dylib
